@@ -1,0 +1,25 @@
+CREATE DATABASE douane;
+
+
+\c douane ;
+
+
+CREATE TABLE contravention (refnumbureau  varchar(30) , datecreation varchar(30) , regioncreation  varchar(30) , comment1 varchar(60) , 
+comment2 varchar(60) , comment3 varchar(60) , comment4 varchar(60) , doaunier1 varchar(20) , douanier2 varchar(20) , douanier3 varchar(20) , douanier4 varchar(20) , 
+commentstat1 Boolean ,commentstat2 Boolean ,commentstat3 Boolean ,commentstat4  Boolean,numseq varchar(40) );
+
+
+CREATE TABLE contrevenant ( procuration  Boolean ,proc_cin_original varchar(10) ,cin varchar(10) ,nom varchar(20) , 
+ prenom varchar(20) ,email varchar(40) ,address varchar(60) ,gsm varchar(20) , numseq varchar(40)  );
+
+
+CREATE TABLE douanier(
+nummartricule varchar(20)  ,cin varchar(10) , nom varchar(20) , prenom varchar(20) ,email varchar(40) ,
+address varchar(60) ,gsm varchar(20) , letype varchar(20) ,motdepasse varchar(20)  );
+
+INSERT INTO douanier (nummartricule ,cin ,nom ,prenom ,email ,address ,gsm ,letype ,motdepasse) VALUES ('0','admin','0','0','0','0','0','directeur','admin') ;
+
+
+
+
+
